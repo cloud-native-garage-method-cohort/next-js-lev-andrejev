@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: my-react-app
-        image: quay.io/levandrejev/nextjs-app:<TODO>
+        image: quay.io/levandrejev/nextjs-app:7a8429b0498258e9e27e55cb96a1f0648dc98d54
