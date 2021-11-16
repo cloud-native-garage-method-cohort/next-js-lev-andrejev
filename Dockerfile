@@ -10,6 +10,7 @@ COPY . .
 
 RUN npm run build
 
+## Optional
 EXPOSE 3000
 
 CMD npm start
