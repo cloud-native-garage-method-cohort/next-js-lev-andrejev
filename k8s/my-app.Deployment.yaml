@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-react-app
+  name: my-nextjs-app
 spec:
   replicas: 1
   selector:
     matchLabels: 
-      app.kubernetes.io/instance: my-react-app
-      app.kubernetes.io/name: my-react-app
+      app.kubernetes.io/instance: my-nextjs-app
+      app.kubernetes.io/name: my-nextjs-app
   template: 
     metadata:
       labels:
-        app.kubernetes.io/instance: my-react-app
-        app.kubernetes.io/name: my-react-app
+        app.kubernetes.io/instance: my-nextjs-app
+        app.kubernetes.io/name: my-nextjs-app
     spec:
       containers:
-      - name: my-react-app
+      - name: my-nextjs-app
         image: quay.io/levandrejev/nextjs-app:7a8429b0498258e9e27e55cb96a1f0648dc98d54

@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-react-app-svc
+  name: my-nextjs-app-svc
 spec:
   type: ClusterIP
   selector:
-    app.kubernetes.io/instance: my-react-app
-    app.kubernetes.io/name: my-react-app
+    app.kubernetes.io/instance: my-nextjs-app
+    app.kubernetes.io/name: my-nextjs-app
   ports:
   - name: http
     protocol: TCP
